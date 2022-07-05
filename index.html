@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Dumandan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ef1571087b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="#home">MD</a>
+        </div>
+        <div id="navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contacts">Contacts</a>
+            <i class="fa-solid fa-bars" id="menu" onclick="showNav()"></i>
+        </div>
+        <div id="drop-down-nav">
+            <a href="#home" onclick="hideNav()">Home</a>
+            <a href="#about" onclick="hideNav()">About</a>
+            <a href="#services" onclick="hideNav()">Services</a>
+            <a href="#contacts" onclick="hideNav()">Contacts</a>
+            <i class="fa-solid fa-xmark" onclick="hideNav()"></i>
+        </div>
+    </header>
+    <div id="home">
+        <div class="intro-wrapper">
+            <div class="intro-message">
+                <h1>I'm Miguel Dumandan Jr.</h1>
+                <p>CS student, vocalist, musician</p>
+            </div>
+            <div id="myphoto">
+                <img src="assets/myphoto-home.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <h1>About Me</h1>
+        <div id="about-container">
+            <div id="bio" class="card" onmouseover="showContent(0)" onmouseleave="hideContent(0)">
+                <div class="details">
+                    I am Miguel Dumandan Jr, 22 years of age. I am from Libertad Norte, Sagbayan, Bohol.
+                    I have 4 siblings and I'm the youngest and the most gwapo of all.
+                </div>
+            </div>
+            <div id="sport" class="card" onmouseover="showContent(1)" onmouseleave="hideContent(1)">
+                <div class="details">
+                    I love to play billiards and I've been into big tournaments around bohol.
+                </div>
+                
+            </div>
+            <div id="music" class="card" onmouseover="showContent(2)" onmouseleave="hideContent(2)">
+                <div class="details">
+                    I also love music and I'm a member of a band called Pandemix band. 
+                    The name is the combination of "pandemic" and "mix" since the
+                    band was founded in the middle of the pandemic last 2021. We are 
+                    6 in the band and I am the rhythm and also one of the vocals of 
+                    the band. We've been performing in my places in Bohol like Panglao, 
+                    Tagbilaran, Tubigon, Calape and many other places.
+                </div>
+            </div>
+            <div id="mechanic" class="card" onmouseover="showContent(3)" onmouseleave="hideContent(3)">
+                <div class="details">
+                    I am also a small engine mechanic and we have a family business 
+                    which is a motor shop in Buenavista, Bohol.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <h1>What I offer?</h1>
+        <div id="services-main-container">
+            <div id="band">
+                <div class="service-container">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-drum"></i>
+                    </div>
+                    <div class="service-title">
+                        <h2>band gig</h2>
+                    </div>
+                    <div id="band-details">
+                        Pandemix (my band) offers at least 3 hours of playing any types of songs 
+                        either for your restaurant's customers, parties, and other important events
+                        that needs a good vibe. We can uplift your event's energy to the 
+                        next level.
+                    </div>
+                    <div id="detail-container"><a href="#contacts">see more details</a></div>
+                </div>
+            </div>
+            <div id="shop">
+                <div id="moto-shop" class="service-container">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-motorcycle"></i>
+                    </div>
+                    <div class="service-title">
+                        <h2>motorcycle shop</h2>
+                    </div>
+                    <div id="shop-details">
+                        Our shop offers any kind of motorcycle repairs and services such
+                        as overhauling, tune up, and many more. We have professional staffs
+                        that has keen knowledge on motorcycles whom you can trust. If you
+                        have problems with your motorcycle, just contact us.
+                    </div>
+                    <div id="detail-container"><a href="#contacts">see more details</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contacts">
+        <div id="contact-container">
+            <div id="contact-title">
+                <h1>contact me</h1>
+                <h3>Message me with the following accounts</h3>
+            </div>
+                <div id="media-wrapper">
+                <div id="phone" class="media">
+                    <i class="fa-solid fa-square-phone"></i>
+                    <span>09073756127</span>
+                </div>
+                <div id="mail" class="media">
+                    <i class="fa-solid fa-square-envelope"></i>
+                    <span>miguel.dumandan.jr <br> @gmail.com</span>
+                </div>
+                <div id="facebook" class="media">
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <span><a href="https://web.facebook.com/profile.php?id=100010833284791">Mi Guel</a></span>
+                    <span><a href="https://web.facebook.com/Pandemix.official">Pandemix</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
